@@ -172,7 +172,7 @@ button > img {
   display: flex;
   align-items: center;
 }
-video {
+.multimedia {
   margin: 0 auto;
   height: 500px;
 }
@@ -335,13 +335,27 @@ footer{
     grid-area: footer;
     background-color:var(--theme-color);
     color: var(--text-color);
-    font-size: 10px;
+    font-size: 12px;
     text-align: center;
     padding: 15px;;
     line-height: 20px;
 }
 
 
+@media (orientation: landscape) {
+  .grid-container {
+    grid-template: none;
+  }
+  .topheader {
+    display: none;
+  }
+  .multimedia {
+    height: 100vh;
+  }
+  footer {
+    display: none;
+  }
+}
 
 
 
