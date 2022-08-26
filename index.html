@@ -39,6 +39,7 @@
             width="100%"
             autoplay
             loop
+            muted
         >
         </video>
     </main>
@@ -51,8 +52,11 @@
         window.screen.orientation.onchange = function() {
       if (this.type.startsWith('landscape')) {
         document.querySelector('#multimedia_container').webkitRequestFullscreen();
+        document.querySelector('#multimedia_container').mozFullscreen();
+
       } else {
         document.webkitExitFullscreen();
+        document.mozFullscreen();
       }
 };
     </script>
