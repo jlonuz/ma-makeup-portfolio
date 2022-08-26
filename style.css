@@ -318,7 +318,7 @@ grid-column:  span 2;
 
 #contact img {
   width: 300px;
-
+  border-radius: 50%;
 }
 #contact p {
   text-align: center;
@@ -425,7 +425,7 @@ footer{
     text-align: center;
   }
   .menu.menu_opened .logo img {
-    filter: invert(1);
+    /* filter: invert(1); */
     width: 30%;
   }
   .menu_opened {

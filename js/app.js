@@ -15,8 +15,11 @@ const menuBtn = document.querySelector('.menu-btn');
 let menuOpen = false;
 
 menuBtn.addEventListener('click', () => {
+
     menu.classList.toggle("menu_opened");
     menu.classList.toggle("mobile");
+    document.getElementById('logo').src="./media/img/logo-blanco.png"
+
     if(!menuOpen){
         menuBtn.classList.add('open');
         menuOpen = true;
