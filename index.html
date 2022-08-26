@@ -30,12 +30,11 @@
             </ul>
         </nav>
     </header>
-    <main class="wrapper-video">
+    <main id="multimedia_container" class="wrapper-video">
         <video
             class="multimedia"
             src="media/video/ma-home.mp4"
             type="video/mp4"
-            poster="./media/img/poster.png"
             width="100%"
             autoplay
             loop
@@ -47,5 +46,14 @@
     </footer>
 
     <script src="js/app.js"></script>
+    <script>
+        window.screen.orientation.onchange = function() {
+      if (this.type.startsWith('landscape')) {
+        document.querySelector('#multimedia_container').webkitRequestFullscreen();
+      } else {
+        document.webkitExitFullscreen();
+      }
+};
+    </script>
 </body>
 </html>
